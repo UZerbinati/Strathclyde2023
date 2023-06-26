@@ -1,0 +1,63 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=Gradient Evluation] (0) at (-8, 0) {};
+		\node [style=Gradient Evluation] (1) at (-4, 7) {};
+		\node [style=Gradient Evluation] (2) at (0, 0) {};
+		\node [style=PointEvaluation] (3) at (-4, 7) {};
+		\node [style=PointEvaluation] (4) at (-8, 0) {};
+		\node [style=PointEvaluation] (5) at (0, 0) {};
+		\node [style=none] (6) at (-4, 0) {};
+		\node [style=none] (7) at (-4, -1) {};
+		\node [style=none] (8) at (-6, 3.5) {};
+		\node [style=none] (9) at (-7.25, 4.25) {};
+		\node [style=none] (10) at (-2, 3.5) {};
+		\node [style=PointEvaluation] (12) at (8, 0) {};
+		\node [style=PointEvaluation] (13) at (12, 7) {};
+		\node [style=PointEvaluation] (15) at (16, 0) {};
+		\node [style=PointEvaluation] (21) at (12, 0) {};
+		\node [style=none] (29) at (24, 0) {};
+		\node [style=Discontinuous Point Evaluation] (30) at (24, 0) {};
+		\node [style=Discontinuous Point Evaluation] (31) at (28, 7) {};
+		\node [style=Discontinuous Point Evaluation] (35) at (32, 0) {};
+		\node [style=none] (40) at (-0.75, 4.25) {};
+		\node [style=none] (41) at (-4, 2.25) {};
+		\node [style=PointEvaluation] (42) at (10, 3.5) {};
+		\node [style=PointEvaluation] (43) at (14, 3.5) {};
+		\node [style=none] (44) at (12, 2.25) {};
+		\node [style=PointEvaluation] (45) at (12, 4.5) {};
+		\node [style=PointEvaluation] (46) at (10.25, 1.25) {};
+		\node [style=PointEvaluation] (47) at (13.75, 1.25) {};
+		\node [style=none] (51) at (28, 2.25) {};
+		\node [style=Discontinuous Point Evaluation] (52) at (28, 2.25) {};
+		\node [style=PointEvaluation] (53) at (12, 2.25) {};
+		\node [style=none] (54) at (18, 0) {};
+		\node [style=none] (55) at (20, 0) {};
+		\node [style=none] (56) at (22, 0) {};
+		\node [style=none] (57) at (2, 0) {};
+		\node [style=none] (58) at (4, 0) {};
+		\node [style=none] (59) at (6, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=edge] (3) to (4);
+		\draw [style=edge] (5) to (4);
+		\draw [style=edge] (5) to (3);
+		\draw [style=Normal Derivative] (6.center) to (7.center);
+		\draw [style=Normal Derivative] (8.center) to (9.center);
+		\draw [style=Normal Derivative] (10.center) to (40.center);
+		\draw [style=edge] (13) to (12);
+		\draw [style=edge] (12) to (15);
+		\draw [style=edge] (15) to (13);
+		\draw [style=edge] (31) to (30);
+		\draw [style=edge] (30) to (35);
+		\draw [style=edge] (35) to (31);
+		\draw [style=dashedEdge] (4) to (41.center);
+		\draw [style=dashedEdge] (41.center) to (3);
+		\draw [style=dashedEdge] (5) to (41.center);
+		\draw [style=dashedEdge] (13) to (44.center);
+		\draw [style=dashedEdge] (44.center) to (15);
+		\draw [style=dashedEdge] (44.center) to (12);
+		\draw [style=dashedEdge] (30) to (51.center);
+		\draw [style=dashedEdge] (51.center) to (31);
+		\draw [style=dashedEdge] (51.center) to (35);
+	\end{pgfonlayer}
+\end{tikzpicture}
